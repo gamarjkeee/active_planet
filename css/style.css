@@ -880,11 +880,6 @@ body {
 }
 
 @media (min-width: 47.99875em) {
-  .link {
-    -ms-flex-item-align: start;
-        align-self: flex-start;
-  }
-
   .main__container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -897,6 +892,11 @@ body {
         -ms-flex: 0 0 52%;
             flex: 0 0 52%;
     max-height: 34.375rem;
+  }
+
+  .content-main__link {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
   }
 }
 
