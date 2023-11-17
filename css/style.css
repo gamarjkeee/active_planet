@@ -574,7 +574,8 @@ body {
 .price-includes__items {
   display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(19.5rem, 1fr));
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
   -webkit-column-gap: 0.9375rem;
      -moz-column-gap: 0.9375rem;
           column-gap: 0.9375rem;
@@ -869,6 +870,10 @@ body {
 }
 
 @media (min-width: 23.4375em) {
+  .price-includes__items {
+    grid-template-columns: repeat(auto-fit, minmax(19.5rem, 1fr));
+  }
+
   .interested__items {
     grid-template-columns: repeat(auto-fit, minmax(19.5rem, 1fr));
   }
